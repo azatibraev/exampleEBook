@@ -1,27 +1,14 @@
-package com.example.demo.models;
+package com.example.demo.dto;
 
-import lombok.AllArgsConstructor;
+import com.example.demo.models.Language;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
 
-@Entity
-@Table(name = "books")
-@NoArgsConstructor
-@AllArgsConstructor
-@Getter
-@Setter
-public class Book {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @SequenceGenerator(name = "book_gen", sequenceName = "book_seq", allocationSize = 1)
-
-    private Long id;
+@Getter @Setter
+public class BookRequest {
 
     private String name;
 
