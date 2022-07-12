@@ -1,6 +1,6 @@
 package com.example.demo.dto;
 
-import com.example.demo.models.Language;
+import com.example.demo.enums.Language;
 import com.example.demo.models.typeOfBook.AudioBook;
 import com.example.demo.models.typeOfBook.ElectronicBook;
 import com.example.demo.models.typeOfBook.PaperBook;

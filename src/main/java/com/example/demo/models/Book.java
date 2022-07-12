@@ -1,5 +1,6 @@
 package com.example.demo.models;
 
+import com.example.demo.enums.Language;
 import com.example.demo.models.typeOfBook.AudioBook;
 import com.example.demo.models.typeOfBook.ElectronicBook;
 import com.example.demo.models.typeOfBook.PaperBook;
@@ -51,6 +52,8 @@ public class Book {
 
     private boolean isBestseller;
 
+    @ManyToOne
+    private UserApp userApp;
 
     private List<String> photos;
 
