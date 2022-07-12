@@ -1,5 +1,8 @@
 package com.example.demo.models;
 
+import com.example.demo.models.typeOfBook.AudioBook;
+import com.example.demo.models.typeOfBook.ElectronicBook;
+import com.example.demo.models.typeOfBook.PaperBook;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -41,15 +44,45 @@ public class Book {
 
     private LocalDate publishedDate;
 
+    private int quantityOfBook;
+
     private int discount;
 
     private boolean isBestseller;
 
+
     private List<String> photos;
 
+    @OneToOne
     private PaperBook paperBook;
 
+    @OneToOne
     private AudioBook audioBook;
 
+    @OneToOne
     private ElectronicBook electronicBook;
+
+    public PaperBook getPaperBook() {
+        return paperBook;
+    }
+
+    public void setPaperBook(PaperBook paperBook) {
+        this.paperBook = paperBook;
+    }
+
+    public AudioBook getAudioBook() {
+        return audioBook;
+    }
+
+    public void setAudioBook(AudioBook audioBook) {
+        this.audioBook = audioBook;
+    }
+
+    public ElectronicBook getElectronicBook() {
+        return electronicBook;
+    }
+
+    public void setElectronicBook(ElectronicBook electronicBook) {
+        this.electronicBook = electronicBook;
+    }
 }
