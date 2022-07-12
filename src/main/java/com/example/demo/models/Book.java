@@ -28,6 +28,7 @@ public class Book {
 
     private String name;
 
+    @ManyToOne
     private Genre genre;
 
     private int sellingPrice;
