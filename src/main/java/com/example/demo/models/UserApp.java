@@ -29,14 +29,15 @@ public class UserApp {
     @OneToMany
     private List<Book> book = new ArrayList();
 
-    @OneToOne
     private Roles role;
 
     @OneToMany
     private List<PromoCode> promoCodes = new ArrayList<>();
 
-    private List<Basket> basket = new ArrayList<>();
+    @OneToMany
+    private List<Book> basket = new ArrayList<>();
 
-    private List<Favorite> favorite = new ArrayList<>();
+    @OneToMany
+    private List<Book> favorite = new ArrayList<>();
 
 }
