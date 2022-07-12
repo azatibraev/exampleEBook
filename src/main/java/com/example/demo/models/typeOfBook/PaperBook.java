@@ -1,5 +1,6 @@
 package com.example.demo.models.typeOfBook;
 
+import com.example.demo.models.Book;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,7 +14,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Setter
 @Getter
-public class PaperBook {
+public class PaperBook extends Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "paper_books_id")

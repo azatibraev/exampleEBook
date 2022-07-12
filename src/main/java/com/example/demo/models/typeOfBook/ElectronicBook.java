@@ -1,11 +1,21 @@
 package com.example.demo.models.typeOfBook;
 
 
+import com.example.demo.models.Book;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "electronic_books")
-public class ElectronicBook {
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class ElectronicBook extends Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "electronic_books_id")

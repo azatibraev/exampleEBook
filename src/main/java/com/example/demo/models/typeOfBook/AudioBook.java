@@ -1,5 +1,6 @@
 package com.example.demo.models.typeOfBook;
 
+import com.example.demo.models.Book;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,7 +15,7 @@ import javax.persistence.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class AudioBook {
+public class AudioBook extends Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "audio_books_id")
@@ -24,8 +25,6 @@ public class AudioBook {
     private Long id;
 
     private String fragment;
-
-    private String aboutBook;
 
     private String fullVersion;
 }

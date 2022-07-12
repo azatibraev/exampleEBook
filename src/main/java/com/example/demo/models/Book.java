@@ -1,5 +1,8 @@
 package com.example.demo.models;
 
+import com.example.demo.models.typeOfBook.AudioBook;
+import com.example.demo.models.typeOfBook.ElectronicBook;
+import com.example.demo.models.typeOfBook.PaperBook;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
