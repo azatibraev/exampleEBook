@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.List;2
+import java.util.List;
 @Component
 public class BookViewMapper {
 

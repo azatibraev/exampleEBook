@@ -1,5 +1,6 @@
 package com.example.demo.models.typeOfBook;
 
+import com.example.demo.models.Book;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
