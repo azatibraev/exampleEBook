@@ -2,10 +2,13 @@ package com.example.demo.dto;
 
 import com.example.demo.models.Genre;
 import com.example.demo.models.Language;
+
 import com.example.demo.models.typeOfBook.AudioBook;
 import com.example.demo.models.typeOfBook.ElectronicBook;
 import com.example.demo.models.typeOfBook.PaperBook;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
@@ -13,6 +16,8 @@ import java.time.LocalTime;
 import java.util.List;
 
 @Getter @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class BookRequest {
 
     private String name;

@@ -1,5 +1,10 @@
 package com.example.demo.models;
 
+import com.example.demo.enums.Language;
+import com.example.demo.models.typeOfBook.AudioBook;
+import com.example.demo.models.typeOfBook.ElectronicBook;
+import com.example.demo.models.typeOfBook.PaperBook;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -48,6 +53,9 @@ public class Book {
     private int discount;
 
     private boolean isBestseller;
+
+    @ManyToOne
+    private UserApp userApp;
 
     private List<String> photos;
 
