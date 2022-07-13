@@ -1,16 +1,15 @@
 package com.example.demo.models;
 
 import com.example.demo.enums.Language;
-import com.example.demo.models.typeOfBook.AudioBook;
-import com.example.demo.models.typeOfBook.ElectronicBook;
-import com.example.demo.models.typeOfBook.PaperBook;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.List;
 
 @Entity
@@ -58,36 +57,25 @@ public class Book {
 
     private List<String> photos;
 
-    @OneToOne
-    private PaperBook paperBook;
+    private String paperBookFragment;
 
-    @OneToOne
-    private AudioBook audioBook;
+    private String audioBookFragment;
 
-    @OneToOne
-    private ElectronicBook electronicBook;
+    private LocalTime duration;
 
-    public PaperBook getPaperBook() {
-        return paperBook;
-    }
+    private String typeOfAudio;
 
-    public void setPaperBook(PaperBook paperBook) {
-        this.paperBook = paperBook;
-    }
+    private String fullAudio;
 
-    public AudioBook getAudioBook() {
-        return audioBook;
-    }
+    private String electronicBookFragment;
 
-    public void setAudioBook(AudioBook audioBook) {
-        this.audioBook = audioBook;
-    }
+    private String fullElectronicBook;
 
-    public ElectronicBook getElectronicBook() {
-        return electronicBook;
-    }
 
-    public void setElectronicBook(ElectronicBook electronicBook) {
-        this.electronicBook = electronicBook;
-    }
+
+
+
+
+
+
 }

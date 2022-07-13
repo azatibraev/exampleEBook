@@ -2,16 +2,19 @@ package com.example.demo.dto;
 
 import com.example.demo.enums.Language;
 import com.example.demo.models.Genre;
-import com.example.demo.models.typeOfBook.AudioBook;
-import com.example.demo.models.typeOfBook.ElectronicBook;
-import com.example.demo.models.typeOfBook.PaperBook;
+
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.AllArgsConstructor;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.List;
 
 @Getter @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class BookRequest {
 
     private String name;
@@ -39,10 +42,15 @@ public class BookRequest {
     private boolean isBestseller;
 
     private List<String> photos;
+    private String paperBookFragment;
 
-    private PaperBook paperBook;
+    private String audioBookFragment;
 
-    private AudioBook audioBook;
+    private LocalTime duration;
 
-    private ElectronicBook electronicBook;
+    private String typeOfAudio;
+    private String fullAudio;
+    private String electronicBookFragment;
+
+    private String fullElectronicBook;
 }

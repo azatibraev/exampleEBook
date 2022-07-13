@@ -1,16 +1,19 @@
 package com.example.demo.dto;
 
 import com.example.demo.enums.Language;
-import com.example.demo.models.typeOfBook.AudioBook;
-import com.example.demo.models.typeOfBook.ElectronicBook;
-import com.example.demo.models.typeOfBook.PaperBook;
+import com.example.demo.models.Genre;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.List;
 
 @Getter @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class BookResponse {
 
     private Long id;
@@ -41,9 +44,17 @@ public class BookResponse {
 
     private List<String> photos;
 
-    private PaperBook paperBook;
+    private String paperBookFragment;
 
-    private AudioBook audioBook;
+    private String audioBookFragment;
 
-    private ElectronicBook electronicBook;
+    private LocalTime duration;
+
+    private String typeOfAudio;
+
+    private String fullAudio;
+
+    private String electronicBookFragment;
+
+    private String fullElectronicBook;
 }

@@ -28,9 +28,7 @@ public class BookEditMapper {
         book.setDiscount(request.getDiscount());
         book.setBestseller(request.isBestseller());
         book.setPhotos(request.getPhotos());
-        book.setPaperBook(request.getPaperBook());
-        book.setAudioBook(request.getAudioBook());
-        book.setElectronicBook(request.getElectronicBook());
+
         return book;
     }
 
@@ -48,9 +46,7 @@ public class BookEditMapper {
         book.setDiscount(request.getDiscount());
         book.setBestseller(request.isBestseller());
         book.setPhotos(request.getPhotos());
-        book.setPaperBook(request.getPaperBook());
-        book.setAudioBook(request.getAudioBook());
-        book.setElectronicBook(request.getElectronicBook());
+
 
     }
 }
