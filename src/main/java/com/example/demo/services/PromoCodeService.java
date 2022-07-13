@@ -2,8 +2,9 @@ package com.example.demo.services;
 
 import com.example.demo.dto.PromoCodeRequest;
 import com.example.demo.dto.PromoCodeResponce;
-import com.example.demo.dto.mapper.PromoEditMapper;
-import com.example.demo.dto.mapper.PromoViewMapper;
+
+import com.example.demo.mappers.editMapper.PromoCodeEditMapper;
+import com.example.demo.mappers.viewMapper.PromoCodeViewMapper;
 import com.example.demo.models.PromoCode;
 import com.example.demo.repositories.PromoCodeRepository;
 import lombok.RequiredArgsConstructor;
@@ -14,12 +15,12 @@ import org.springframework.stereotype.Service;
 public class PromoCodeService {
 
     private final PromoCodeRepository repository;
-    private final PromoEditMapper editMapper;
-    private final PromoViewMapper viewMapper;
+    private final PromoCodeEditMapper editMapper;
+    private final PromoCodeViewMapper viewMapper;
 
     public PromoCodeResponce create(PromoCodeRequest request) {
         PromoCode promoCode = editMapper.create(request);
-        return viewMapper.create(repository.save(promoCode));
+        return viewMapper.createView(repository.save(promoCode));
     }
 
 
