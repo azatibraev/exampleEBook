@@ -54,6 +54,7 @@ public class Book {
     @ManyToOne
     private UserApp userApp;
 
+
     private List<String> photos;
 
     private String paperBookFragment;

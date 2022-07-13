@@ -1,4 +1,4 @@
-package com.example.demo.mappers;
+package com.example.demo.mappers.viewMapper;
 
 import com.example.demo.dto.BookResponse;
 import com.example.demo.models.Book;

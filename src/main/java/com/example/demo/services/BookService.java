@@ -2,7 +2,7 @@ package com.example.demo.services;
 
 import com.example.demo.dto.BookResponse;
 import com.example.demo.dto.BookResponseView;
-import com.example.demo.mappers.BookViewMapper;
+import com.example.demo.mappers.viewMapper.BookViewMapper;
 import com.example.demo.models.Book;
 import com.example.demo.repositories.BookRepository;
 import lombok.RequiredArgsConstructor;

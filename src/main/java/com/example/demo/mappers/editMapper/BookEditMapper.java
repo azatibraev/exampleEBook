@@ -1,4 +1,4 @@
-package com.example.demo.mappers;
+package com.example.demo.mappers.editMapper;
 
 import com.example.demo.dto.BookRequest;
 import com.example.demo.models.Book;
