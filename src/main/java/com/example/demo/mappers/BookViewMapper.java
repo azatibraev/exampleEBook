@@ -29,9 +29,6 @@ public class BookViewMapper {
         response.setDiscount(book.getDiscount());
         response.setBestseller(book.isBestseller());
         response.setPhotos(book.getPhotos());
-        response.setPaperBook(book.getPaperBook());
-        response.setAudioBook(book.getAudioBook());
-        response.setElectronicBook(book.getElectronicBook());
         return response;
 
     }

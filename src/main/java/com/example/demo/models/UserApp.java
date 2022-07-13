@@ -27,7 +27,7 @@ public class UserApp {
     private String password;
 
     @OneToMany
-    private List<Book> book = new ArrayList();
+    private List<Book> books = new ArrayList();
 
     private Roles role;
 

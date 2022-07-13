@@ -2,8 +2,6 @@ package com.example.demo.services;
 
 import com.example.demo.dto.PromoCodeRequest;
 import com.example.demo.dto.PromoCodeResponce;
-import com.example.demo.dto.mapper.PromoEditMapper;
-import com.example.demo.dto.mapper.PromoViewMapper;
 import com.example.demo.models.PromoCode;
 import com.example.demo.repositories.PromoCodeRepository;
 import lombok.RequiredArgsConstructor;
